@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel = "stylesheet" type="text/css" href="Form.css">
+    <script src="https://kit.fontawesome.com/418e6ac422.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background-image: url(studentback.jpg);
+    }
+    
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 15%;
+      background-color: rgb(255, 255, 255);
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      text-align: center;
+    }
+    
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    li a.active {
+      background-color: #000;
+      color: rgb(7, 111, 7);
+    }
+    
+    li a:hover:not(.active) {
+      
+      color: rgb(5, 255, 155);
+    }
+
+    .vl {
+      border-left: 1px solid rgb(158, 159, 158);
+     height: 80%;
+     position: absolute;
+     left: 15%;
+     margin-left: -3px;
+     top: 5%;
+     opacity: 20%;
+    }
+    /* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #080808;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #4e4e4e;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #000000;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<body>
+    <nav>
+        <img style="margin-left: 40px; width: 10%; height: 10%;" src="IMS.png">
+        <a href="index.html">Logout</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <ul>    
+        <li><a class="active" href="#dashboard">Dashboard</a></li>
+        
+        
+        <li><a href="form.html">INTERNSHIP FORM</a></li>
+        <li><a href="#editlog">Edit Log Diary</a></li>
+        <li><a href="view.html">View Log Diary</a></li>
+        <li><a href="#contactMentor">Contact Mentor</a></li>
+        <li><a href="#contact IC">Contact Industry Coordinator</a></li>
+        <li><a href="announcements.html">View Announcements Page</a></li>
+        
+    </ul>
+    <div class="vl"></div>
+
+    <!--Attendance-->
+   <div style="margin-left: 13%; margin-top: 5px;">
+      <div class="container" style="margin-left: 6%; width: 50%; background-image: url(intern.jpg); box-shadow: 2px 2px gray;">
+        <h2 style="margin-right: 60%;">Attendance</h2>
+        <div class="w3-container" style="width: 60%;">
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-container w3-green w3-round-xlarge" style="width:60%; height: 20px;">60%</div>
+            </div>
+            <p style="color: rgb(110, 110, 110);">Today, 20 out of 18 are persent.</p>
+        </div>
+      </div>
+   </div><br><br>
+
+   <div class="fixed">
+        <img style="float: right; width: 30%; height: 30%;margin-right: 5px;margin-top: -15%; box-shadow: 2px 2px rgb(169, 169, 169); border-radius: 10px;" src="Performance Graph.png"><br>
+       <h2 style="margin-left: 20%;text-decoration-line: underline;
+       text-decoration-style: stright;
+       text-decoration-color: rgb(0, 0, 0);">Company List</h2>
+       
+       <!--Progress-->
+        <div class="container" style="float: right;width: 300px; margin-right: -28%; margin-top: 30px; background-color: rgb(242, 226, 205); box-shadow: 2px 2px gray;">
+          <h2>Internship Progress</h2>
+          <hr style=" border: 1px solid rgb(193, 212, 188);border-radius: 5px;">
+          <p style="text-align: left; color: #6b6b6b;"><i class="fa-regular fa-clock" style="color: #5bf750;"></i>Internship Duration: 16 Weeks</p>
+          <p style="text-align: left; color: #6b6b6b; font-size: 13px;">7 weeks left for internship completion</p><br>
+          <img src="complete.png" style="width: 100%; height: 100%;">
+        </div>
+
+
+        <!--Slideshow-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="logo-infosys.png" style="width:100%">
+              <div class="text">On 05/12/203</div>
+            </div>
+                
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="Google.png" style="width:100%">
+              <div class="text">On 12/12/2023</div>
+            </div>
+                
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="oneshield.png" style="width:100%">
+              <div class="text">On 29/12/2023 </div>
+            </div>
+                
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+                
+          </div>
+          <br>
+                
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+        </div>
+        <br><br>
+    
+        <h2 style="text-align: center; color: #f2f2f2;">Next Placement drive on 30/11/2023</h2><br>
+    
+        <p  id="demo" style="text-align: center; color: #000000;">
+        </p><br>
+    
+        <img style="max-width: 500%; margin-left: 40%;" src="Ifb.png">
+        <br><br><br>
+   </div>
+
+
+
+
+
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+              
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+              
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+              
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+              }
+    </script>
+   <script>
+           // Set the date we're counting down to
+           var countDownDate = new Date("Dec 1, 2023 15:37:25").getTime();
+    
+     // Update the count down every 1 second
+     var x = setInterval(function() {
+    
+     // Get today's date and time
+     var now = new Date().getTime();
+    
+     // Find the distance between now and the count down date
+     var distance = countDownDate - now;
+    
+     // Time calculations for days, hours, minutes and seconds
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+     // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+    </script>     
+    
+
+</body>
+</html>

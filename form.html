@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<style>
+     ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 15%;
+      background-color: rgb(255, 255, 255);
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      text-align: center;
+    }
+    
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    li a.active {
+      background-color: #000;
+      color: rgb(7, 111, 7);
+    }
+    
+    li a:hover:not(.active) {
+      
+      color: rgb(5, 255, 155);
+    }
+
+    .vl {
+      border-left: 1px solid rgb(158, 159, 158);
+     height: 80%;
+     position: absolute;
+     left: 15%;
+     margin-left: -3px;
+     top: 5%;
+     opacity: 20%;
+    }
+</style>
+<body>
+    <nav>
+        <img style="margin-left: 40px; width: 10%; height: 10%;" src="IMS.png">
+        <a href="index.html">Logout</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="index.html">Home</a>
+    </nav>
+    <ul>    
+        <li><a href="student_dashboard.html">Dashboard</a></li>
+        <li><a class="active" href="form.html">Internship Form</a></li>
+        <li><a href="#editlog">Edit Log Diary</a></li>
+        <li><a href="view.html">View Log Diary</a></li>
+        <li><a href="#contactMentor">Contact Mentor</a></li>
+        <li><a href="#contact IC">Contact Industry Coordinator</a></li>
+        <li><a href="announcements.html">View Announcements Page</a></li>
+        
+    </ul>
+    <div class="vl"></div>
+    <div class="container" style="margin-left: 40%; background-image: url( form.jpg);">
+        <h2>Internship Application Form</h2><br>
+        <form action="process_form.php" method="post">
+            <!-- Student Information -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="rollNo">Roll No:</label>
+            <input type="text" id="rollNo" name="rollNo" required>
+    
+            <label for="facultyMentor">Faculty Mentor Name:</label>
+            <input type="text" id="facultyMentor" name="facultyMentor" required>
+    <!-- Industry Information -->
+    <label for="industryName">Name of Industry:</label>
+    <input type="text" id="industryName" name="industryName" required>
+
+    <label for="industryAddress">Address of Industry:</label>
+    <textarea id="industryAddress" name="industryAddress" rows="4" required></textarea>
+    <label for="industryMentorName">Industry Mentor Name:</label>
+    <input type="text" id="industryMentorName" name="industryMentorName" required>
+
+    <label for="industryMentorDesignation">Designation of Industry Mentor:</label>
+    <input type="text" id="industryMentorDesignation" name="industryMentorDesignation" required>
+
+    <label for="industryMentorContact">Contact Number of Industry Mentor:</label>
+    <input type="tel" id="industryMentorContact" name="industryMentorContact" required>
+
+    <label for="industryMentorEmail">Email ID of Industry Mentor:</label>
+    <input type="email" id="industryMentorEmail" name="industryMentorEmail" required>
+
+    <!-- Internship Source -->
+    <label>Internship Obtained through GEC Placement?</label>
+    <input style="margin-left: -30%; margin-bottom: -4%;"  type="radio" id="gecPlacementYes" name="gecPlacement" value="Yes" required>
+    <label for="gecPlacementYes">Yes</label><br>
+    <input style="margin-left: -30%; margin-bottom: -4%;" type="radio" id="gecPlacementNo" name="gecPlacement" value="No" required>
+    <label for="gecPlacementNo">No</label><br>
+
+    <!-- Submit Button -->
+    <button style="margin-left: 25%;">Submit</button>
+
+</form>
+</div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type="text/css" href="Form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 15%;
+      background-color: rgb(255, 255, 255);
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      text-align: center;
+    }
+    
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    li a.active {
+      background-color: #000;
+      color: rgb(7, 111, 7);
+    }
+    
+    li a:hover:not(.active) {
+      
+      color: rgb(5, 255, 155);
+    }
+
+    .vl {
+      border-left: 1px solid rgb(158, 159, 158);
+     height: 80%;
+     position: absolute;
+     left: 15%;
+     margin-left: -3px;
+     top: 5%;
+     opacity: 20%;
+    }
+</style>
+<body>
+    <nav>
+        <img style="margin-left: 40px; width: 10%; height: 10%;" src="IMS.png">
+        <a href="index.html">Logout</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="index.html">Home</a>
+    </nav>
+    <ul>    
+        <li><a href="admin_dashboard.html">Dashboard</a></li>
+        <li><a class="active" href="#addfaculty">Add Faculty</a></li>
+        <li><a href="#remove">Remove Faculty</a></li>
+        <li><a href="#add IC">Add Industry Coordinator</a></li>
+        <li><a href="#remove IC">Remove Industry Coordinator</a></li>
+        <li><a href="announcements.html">View Announcements Page</a></li>
+        <li> <a href="announcement.html">Edit Announcements Page</a></li>
+        <li><a href="assign_students.html">Assign Students</a></li>
+  </ul>
+    <div class="vl"></div>
+    <img src="addfaculty.png" style=" margin-left: 30%; width: 50%; height: 50%;">
+     <div class="container" style="margin-left: 12cm;">
+     <label style="font-size: 25px;">Enter faculty ID</label><br>
+     <input type="text" name="" id=""><br>
+     <a href="admin_dashboard.html"><button>Add</button></a>
+     </div>
+    </div>
+   <footer>
+     <a href="admin_dashboard.html"><i style="font-size:50px;color: black;align-items: bottom;" class="fa">&#xf100;</i></a>
+   </footer>
+</body>
+</html>
+
